@@ -1,0 +1,96 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+           android:layout_width="150dp"
+           android:layout_height="50dp"
+           android:id="@+id/imageButton2"
+           android:scaleType="fitCenter"
+           android:background="#3B5998"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+
+            android:layout_marginTop="100dp"
+           android:src="@drawable/fb"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="name@email.com"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/imageButton2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="Password"
+            android:layout_marginTop="47dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2" />
+
+        <Button
+            android:text="SIGN IN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSimpleTabs"
+            android:background="@android:color/background_dark"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton"
+            android:background="#dc4737"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/g1"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
